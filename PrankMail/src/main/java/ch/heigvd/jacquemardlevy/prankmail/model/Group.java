@@ -14,4 +14,8 @@ public class Group {
         this.persons.add(person);
     }
 
+    public LinkedList<Person> getPersons(){
+        return persons;
+    }
+
 }
