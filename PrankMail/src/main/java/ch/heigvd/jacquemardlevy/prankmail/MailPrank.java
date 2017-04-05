@@ -16,7 +16,7 @@ public class MailPrank {
         LinkedList<String> to = new LinkedList<>();
         to.add("aurelie.levy@heig-vd.ch");
 
-        ISmtpClient client = new SmtpClient("mailcl0.heig-vd.ch", 25);
+        ISmtpClient client = new SmtpClient("mailcl0.heig-vd.ch", 25, "whatafuncompany.ch");
 
         Mail m = new Mail("aurelie.levy@heig-vd.ch", to, "Coucou Aurélie ! Figure toi que j'ai fait un client SMTP ;P",
                 "Concernant le prochain push");
