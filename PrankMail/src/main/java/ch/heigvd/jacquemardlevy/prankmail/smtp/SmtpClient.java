@@ -3,7 +3,6 @@ package ch.heigvd.jacquemardlevy.prankmail.smtp;
 import java.io.*;
 import java.net.*;
 import java.nio.charset.Charset;
-import java.util.Enumeration;
 
 /**
  * Created by Remi on 04.04.2017.
@@ -16,15 +15,15 @@ public class SmtpClient implements ISmtpClient {
 
     private final String server;
     private final int port;
-    private final String senderAddress;
+    private final String senderIP;
 
     private final Charset ENCODING = Charset.forName("UTF-8");
     private final String END_OF_LINE = "\r\n";
 
-    public SmtpClient(String server, int port, String senderAddress) {
+    public SmtpClient(String server, int port, String senderIP) {
         this.server = server;
         this.port = port;
-        this.senderAddress = senderAddress;
+        this.senderIP = senderIP;
     }
 
     private void connect() throws IOException {
@@ -66,7 +65,7 @@ public class SmtpClient implements ISmtpClient {
         waitNext();
 
         //Connection---
-        writer.println("EHLO " + senderAddress);
+        writer.println("EHLO " + senderIP);
         waitNext();
 
         writer.println("MAIL FROM: " + mail.getFrom());
