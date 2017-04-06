@@ -62,15 +62,15 @@
       <point x="0.0" y="135.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.7078864353312303" x="873.5" y="782.5" />
+  <settings layout="Hierarchic Group" zoom="0.7078864353312303" x="874.0" y="783.0" />
   <SelectedNodes>
     <node>ch.heigvd.jacquemardlevy.prankmail.MailPrank</node>
   </SelectedNodes>
   <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
     <Category>Constructors</Category>
     <Category>Methods</Category>
-    <Category>Inner Classes</Category>
-    <Category>Fields</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
