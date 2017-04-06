@@ -2,7 +2,6 @@ package ch.heigvd.jacquemardlevy.prankmail.model;
 
 import ch.heigvd.jacquemardlevy.prankmail.config.ConfigurationManager;
 import ch.heigvd.jacquemardlevy.prankmail.smtp.ISmtpClient;
-import ch.heigvd.jacquemardlevy.prankmail.smtp.Mail;
 import ch.heigvd.jacquemardlevy.prankmail.smtp.SmtpClient;
 
 import java.io.IOException;
