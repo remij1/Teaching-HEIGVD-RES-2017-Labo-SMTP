@@ -23,11 +23,16 @@ _____
 ##Implementation
 The code has 4 packages:
 * **ch.heigvd.jacquemardlevy.prankmail**: 
- * MailPrank.java => main of the application
+  * MailPrank.java => main of the application
 * **ch.heigvd.jacquemardlevy.prankmail.config**:
- * ConfigurationManager.java => allow to config your manager using the Properties class of java.util
+  * ConfigurationManager.java => allow to config your manager using the Properties class of java.util
 * **ch.heigvd.jacquemardlevy.prankmail.model**:
- * Message.java => Methods to get all the attributes of a message like the subject or the contents
- * Person.java => Methods to get the informations like address
+  * Message.java => methods to get all the attributes of a message like the subject or the contents
+  * Person.java => methods to get the informations like addresses
+  * Prank.java => get all the informations needed and create the e-mails
+  * PrankGenerator.java => generate and send all the e-mails
 * **ch.heigvd.jacquemardlevy.prankmail.smtp**:
+  * ISmtpClient.java => interface to define the method senMail
+  * Mail.java => define all the methods use to create the e-mails
+  * SmtpClient.java => implements the interface named ISmtpClient. Contains the methods for the smtp client to define for example the port, the IP, etc.
 
