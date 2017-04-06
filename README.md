@@ -38,6 +38,6 @@ The code has 4 packages:
   * SmtpClient.java => implements the interface named ISmtpClient. Contains the methods for the smtp client to define for example the port, the IP, etc.
 
 ### Class diagramm
-Here is the associeted class diagramm:
+Here is the associated class diagramm:
 ![uml](figures/diagram.png)
 
