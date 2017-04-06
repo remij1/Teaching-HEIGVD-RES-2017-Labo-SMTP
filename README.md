@@ -28,6 +28,6 @@ The code has 4 packages:
  * ConfigurationManager.java => allow to config your manager using the Properties class of java.util
 * **ch.heigvd.jacquemardlevy.prankmail.model**:
  * Message.java => Methods to get all the attributes of a message like the subject or the contents
- * Person.java => 
+ * Person.java => Methods to get the informations like address
 * **ch.heigvd.jacquemardlevy.prankmail.smtp**:
 
