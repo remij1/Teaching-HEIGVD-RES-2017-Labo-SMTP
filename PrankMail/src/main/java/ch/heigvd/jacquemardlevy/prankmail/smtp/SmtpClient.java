@@ -80,6 +80,11 @@ public class SmtpClient implements ISmtpClient {
         writer.println("DATA");
         waitNext();
 
+        //Encoding---
+        writer.println("Content-Type: text/plain; charset=" + ENCODING);
+        writer.println("Content-Transfer-Encoding: quoted-printable");
+        writer.println("MIME-version: 1.0");
+
         writer.println("From: " + mail.getFrom());
 
         writer.print("To: ");
