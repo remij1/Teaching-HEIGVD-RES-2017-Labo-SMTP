@@ -11,13 +11,13 @@ _____
 * Install or update your Java RE: [https://www.java.com/fr/download/](https://www.java.com/fr/download/)
 * Download or clone this repository
 * Configure the files named **messages.txt** and **persons.txt** that you find in *config* to the beginning of the files:
-  * **messages.txt**: the 1st line should be the subject of your e-mail. The next ones are the text that you want.
+  * **messages.txt**: the 1st line should be the subject of your e-mail. The next ones are the text that you want. To separate the messages, use a new line beginning with *==*.
   * **persons.txt**: each line is the e-mail's address of the persons that you wish to use in your prank.
   * **config.properties**: you can specify the server's address, the server's port, the number of groups. You must have also the path for the messages.txt and the persons.txt.
 * Now, if you don't want already send yours fakes e-mails, you can download MockMock server to set up a test environment. You can do it here: [https://github.com/tweakers-dev/MockMock](https://github.com/tweakers-dev/MockMock)
 * You run MockMock.jar with the next command: `java -jar MockMock.jar -h xxxx -p xxxxx` with the  terminal. The x for -h are for the local port you want to use (default: 25) and the x for -p are for the web interface (default 8282).
 * Then, open your browser and go to `localhost:theXChooseForThe-p`. It will open a window where you can see your fake e-mails. (They won't be really sent with MockMock)
-* Now you can run the code: HEEEEEEEEEEERRRRE ADDD
+* Now you can run the application: use in command line `java -jar PrankMail.jar`.
 
 _____
 
